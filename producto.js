@@ -89,44 +89,50 @@ descuento();
     armarFrase("primavera", "flores");
     
 
-    alert("Carrito de compras!");
-let contador =0;
-let producto=prompt("Ingresa el producto y te dire el precio final (salir para finalizar)");
+//Algoritmo con funcion sin parametros/ condicional/ciclo
 
-function calculadora(codigo1)
-{
-while(producto!="salir"){
-    switch(producto){
-        case "Buso oxford":
-            let precioBuzo=399
-            precioFinal = contador+precioBuzo;
-            console.log( "Precio final buso oxford "+precioFinal);
-            break;
-        case "Buso Tejido":
-            let precioBuzoTejido=295
-            precioFinal =contador+precioBuzoTejido;
-            console.log("Precio final buso tejido"+precioFinal);
-            break;
-        case "Buso Amelie":
+alert("Carrito de compras!");
+let precioFinal = 0;
+
+function calculadora() {
+
+    let producto = prompt("Ingresa el producto y te dire el precio final (salir para finalizar)")
+
+    while (producto != "salir") {
+        switch (producto) {
+            case "Buso oxford":
+                let precioBuzo = 399
+                precioFinal = precioFinal + precioBuzo;
+                console.log("Precio final buso oxford " + precioFinal);
+                break;
+            case "Buso Tejido":
+                let precioBuzoTejido = 295
+                precioFinal = precioFinal + precioBuzoTejido;
+                console.log("Precio final buso tejido" + precioFinal);
+                break;
+                case "Buso Amelie":
             let precioBuzoAmelie =300
-            precioFinal =contador+precioBuzoAmelie;
+            precioFinal =precioFinal+precioBuzoAmelie;
             console.log("Precio final buso amelie"+precioFinal);
             break; 
             case "estampado":
             case "bersuit":
                 let precioEstampado=499
-            precioFinal =contador+precioEstampado;
+            precioFinal =precioFinal+precioEstampado;
             console.log("Precio final de estampado o bersuit"+precioFinal);
             break;
             default:
                 console.log("Producto sin stock");
-                break;          
+                break;
+
+        }
+        producto = prompt("Ingresa el producto y te dire el precio final (salir para finalizar)");
     }
-    producto=prompt("Ingresa el producto y te dire el precio final (salir para finalizar)");
-}
+
+    alert("Precio final: " + precioFinal)
+
 }
 
-calculadora (producto,);
+calculadora();
 */
-
 
