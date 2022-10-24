@@ -34,7 +34,7 @@ const carrito =[];
 
 // creo una funcion
 function mostrarSeleccion(){
-    const productoUsuario = prompt(`Que producto desea comprar: ¿bersuit ameli oxford u orange?`).toLocaleLowerCase();
+    const productoUsuario = prompt(` Que producto desea comprar: ¿bersuit amelie oxford u orange?`).toLowerCase();
     const productoElegido = arrayProductos.find(producto => producto.nombre === productoUsuario);
 
 //Creamos nuestro carrito y medoto push
@@ -53,7 +53,7 @@ mostrarSeleccion();
 //creamos una funcion
 
 function calcularPrecioTotal(){
-    const total = carrito.reduce ( (acc, elemento ) => acc += elemento.precio, 0 );
-    alert ("El precio total es :"+total);
+    const total = carrito.reduce( (acc, elemento ) => acc += elemento.precio, 0 );
+    alert ("El precio total es:" +total);
 }
 
