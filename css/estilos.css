@@ -41,61 +41,25 @@ body .subir {
     border: 2px solid rgb(7, 7, 7);
     font-size: 22px;
 }
-main .contenedor-figura {
-    height: auto;
-    width: 100%;
-    background-color: #30B5E3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 200px;
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
-    grid: gap 10px;
-    padding: 20px;
-}
-main .figura {
-    border: 1px solid rgb(42, 161, 84);
-    border: radius 5px solid #000;
+.imgProductos {
+    width: 250px;
     height: 200px;
-    width: 200px;
-    width: 100%;
-    background-color: dimgrey;
-    background-size: cover;
+    object-fit: contain;
+    margin-top: 1rem;
 }
 
-main .figura1 {
-    grid-area: img1;
-    background-image: url(../img/abrigo.png);
-    background-size: cover;
-    background-position: center;
-    color: antiquewhite;
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0.9rem;
 }
-main .figura2 {
-    grid-area: img2;
-    background-image: url(../img/bersuit.png);
-    background-size: cover;
-    background-position: center;
+
+.colorBoton {
+    color:rgb(166, 20, 206);
+    background-color: #bb65b1;
 }
-main .figura3 {
-    grid-area: img3;
-    background-image: url(../img/Estampado.png);
-    background-size: cover;
-    background-position: center;
-}
-main .figura4 {
-    grid-area: img4;
-    background-image: url(../img/oxford.png);
-    background-size: cover;
-    background-position: center;
-}
-main .figura5 {
-    grid-area: img5;
-    background-image: url(../img/tejido.png);
-    background-size: cover;
-    background-position: center;
-}
-main .figura6 {
-    grid-area: img6;
-    background-image: url(../img/primavera.png);
-    background-size: cover;
-    background-position: center;
+
+.colorBoton:hover {
+    background-color: rgb(145, 45, 226);
+    color: white;
 }
