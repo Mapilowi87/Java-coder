@@ -23,14 +23,14 @@ class Producto {
     }
 }
 
-const Abrigo = new Producto(1, "Abrigo", 20000, "https://i.ibb.co/BqzQGCX/abrigo.png");
-const bersuit = new Producto(2, "Bersuit", 5000, "https://i.ibb.co/T1QW9BT/bersuit.png");
-const estacion = new Producto(3, "Estacion", 8000, "https://i.ibb.co/Yp1DCW7/estacion.png");
-const Estampado = new Producto(4, "Estampado", 6000, "https://i.ibb.co/6HdxcZt/Estampado.png");
-const oxford = new Producto(5, "Oxford", 3000, "https://i.ibb.co/CKbkzLJ/oxford.png");
-const rayita = new Producto(6, "Rayita", 4000, "https://i.ibb.co/znMZf7X/rayita.png");
-const rojo = new Producto(7,"Rojo", 3000, "https://i.ibb.co/YWcRxWJ/rojo.png");
-const tejido = new Producto(8, "Tejido", 10000, "https://i.ibb.co/TWdG0py/tejido3.png");
+const Abrigo = new Producto(1, "Abrigo", 20000, "https://i.ibb.co/Lp8YrdD/abrigo.png");
+const bersuit = new Producto(2, "Bersuit", 5000, "https://i.ibb.co/DbtFcD5/bersuit1.png");
+const estacion = new Producto(3, "Estacion", 8000, "https://i.ibb.co/RbNk9B8/estacion.png");
+const Estampado = new Producto(4, "Estampado", 6000, "https://i.ibb.co/cYLXFkk/Estampado.png");
+const oxford = new Producto(5, "Oxford", 3000, "https://i.ibb.co/hKxgFnY/oxford.png");
+const rayita = new Producto(6, "Rayita", 4000, "https://i.ibb.co/QQbGXWF/rayita.png");
+const rojo = new Producto(7,"Rojo", 3000, "https://i.ibb.co/q1MVPyh/primavera.png");
+const tejido = new Producto(8, "Tejido", 10000, "https://i.ibb.co/JHGDjf6/tejido3.png");
 
 //Creamos un Array con todo nuestro catálogo de productos: 
 
@@ -178,4 +178,3 @@ const calcularTotal = () => {
     })
     total.innerHTML = `Total: $${totalCompra}`;
 }
-
